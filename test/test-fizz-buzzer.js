@@ -33,12 +33,3 @@ describe ('num', function() {
 
 
 
-/*		it('should throw error', function() {
-				(fizzBuzz("green")).should.throw(Error)
-		});
-	});	*/		
-
-
-
-
-
