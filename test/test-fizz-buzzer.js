@@ -19,10 +19,24 @@ describe ('num', function() {
 			const answer = fizzBuzz(9);
 			answer.should.equal('fizz');
 		});
-		it('should throw error', function() {
+		it('should produce error if input isn\'t number', function() {
+    		const badInputs = [true, false, 'cat', function() {}, [1, 2, 3]]
+    		badInputs.forEach(function(input) {
+      			(function() {
+          			fizzBuzz(input)
+      			}).should.throw(Error);
+    		});
+  		});
+  	});	
+
+
+
+
+
+/*		it('should throw error', function() {
 				(fizzBuzz("green")).should.throw(Error)
 		});
-	});			
+	});	*/		
 
 
 
